@@ -1,0 +1,19 @@
+id: 6b56cc73-134e-45ab-924b-64389a00e0f8
+timestamp: 2023-06-20T00:07:47Z
+username: zahooruk2022
+source: TAP-GUI
+accelerator:
+  name: angular-frontend
+  source:
+    image: europe-west2-docker.pkg.dev/za-tanzu/tap/tap-packages@sha256:53448bdb2e7ac999c203e694c754734cf35f2ac283d88ef189dddda1e2509a83
+fragments:
+  - name: tap-workload
+    source:
+      image: europe-west2-docker.pkg.dev/za-tanzu/tap/tap-packages@sha256:dbf0dedb6848ad8a7704c1c19465a1ddae9039b0e63c1dd0df3e2ed9cbda6093
+options:
+  artifactId: angular-frontend
+  backendService: customer-profile-backend.namespace
+  bsGitBranch: main
+  bsGitRepository: github.com?owner=zahooruk2022&repo=angular-frontend
+  projectName: angular-frontend
+  useSingleSignOn: false
